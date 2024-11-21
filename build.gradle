@@ -1,0 +1,54 @@
+buildscript {
+    repositories {
+        maven { url 'https://repo1.maven.org/maven2/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
+        maven { url 'https://dl.google.com/dl/android/maven2/' }
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://developer.huawei.com/repo/' }
+        maven { url 'https://developer.huawei.com/repo/' }
+        maven {  url "https://mvn.getui.com/nexus/content/repositories/releases/" }
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.0.1"
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
+        maven { url 'https://dl.google.com/dl/android/maven2/' }
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://developer.huawei.com/repo/' }
+        maven { url 'https://developer.huawei.com/repo/' }
+        maven {  url "https://mvn.getui.com/nexus/content/repositories/releases/" }
+
+        mavenCentral()
+        google()
+    }
+}
+
+
+ext {
+    compileSdkVersion = 30
+    minSdkVersion = 23
+    targetSdkVersion = 30
+    versionCode = 200
+    versionName = '1.0.0'
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

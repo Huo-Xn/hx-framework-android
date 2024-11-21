@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    <com.joanzapata.pdfview.PDFView-->
+    <!--        android:id="@+id/loadPdfView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent" />-->
+    <FrameLayout
+        android:id="@+id/documentatioin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/pdfloading"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:id="@+id/pdfloadingtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加载中......"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <com.luck.picture.lib.photoview.PhotoView
+            android:id="@+id/photoview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/photoback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:src="@drawable/picture_icon_back_arrow" />
+
+    </FrameLayout>
+
+
+</FrameLayout>

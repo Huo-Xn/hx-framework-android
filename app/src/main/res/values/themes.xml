@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+<!--    &lt;!&ndash;  没有 导航栏的主题风格  &ndash;&gt;-->
+<!--    <style name="MDTheme" parent="Theme.Design.Light.NoActionBar">-->
+<!--        <item name="android:windowTranslucentStatus">false</item>-->
+<!--        <item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+<!--        <item name="android:statusBarColor">@android:color/transparent</item>-->
+<!--        &lt;!&ndash; Android 6.0以上 状态栏字色和图标为浅黑色&ndash;&gt;-->
+<!--        <item name="android:windowLightStatusBar">true</item>-->
+<!--    </style>-->
+
+
+<!--    <style name="MDTheme" parent="Theme.AppCompat.DayNight.NoActionBar">-->
+    <style name="MDTheme" parent="Theme.AppCompat.Light.NoActionBar">
+<!--        <item name="android:windowTranslucentNavigation">true</item>-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!-- 设置statusBarColor 为透明-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!--窗体背景，这个背景能在第一时间显示, 避免启动时白屏，黑屏问题-->
+    <style name="MyStartTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/config_bg_splash</item>
+        <item name="config_color_splash_bg">@mipmap/butler_splash</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+      <!--  <item name="config_splash_app_logo">@drawable/ic_splash_app_logo</item>
+        <item name="xui_config_splash_company_logo">@drawable/ic_splash_company_logo</item>-->
+    </style>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--**********************************************
+    *                splash view               *
+    **********************************************-->
+    <!--启动页背景-->
+    <attr name="config_color_splash_bg" format="reference" />
+    <!--启动页上的应用图标-->
+    <attr name="config_splash_app_logo" format="reference" />
+    <!--启动页上应用图标距离下端的距离-->
+    <attr name="config_app_logo_bottom" format="dimension" />
+    <!--启动页上公司的标志-->
+    <attr name="config_splash_company_logo" format="reference" />
+    <!--启动页上公司的标志距离下端的距离-->
+    <attr name="xui_config_company_logo_bottom" format="dimension" />
+
+    <attr name="guide_btn_padding_horizontal" format="dimension" />
+    <attr name="guide_btn_padding_vertical" format="dimension" />
+    <attr name="guide_btn_margin_bottom" format="dimension" />
+
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 我的页面顶部：预留tit的位置   -->
+    <FrameLayout
+        android:id="@+id/base_mytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+    <!-- 我的页面内容：预留内容位置，为了以后添加出于页面之上的其它内容。如：弹窗  -->
+    <FrameLayout
+        android:id="@+id/base_mycenter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFF">
+
+        <!-- 我的webview： -->
+        <wendu.dsbridge.dwebview.DWebView
+            android:id="@+id/base_mywebview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <!-- 我的webview覆盖层：当加载时，或者是加载失败的时候，出现的页面 -->
+        <LinearLayout
+            android:id="@+id/base_mywebview_mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#FFF"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/base_mywebview_mask_img"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:adjustViewBounds="false" />
+
+            <TextView
+                android:id="@+id/base_mywebview_mask_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pdfloadingRoot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/pdfloading"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:id="@+id/pdfloadingtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <!-- 我的网络监听层：当网络出现异常的时候，它会显示出来，反之不显示 -->
+        <LinearLayout
+            android:id="@+id/base_mywebview_internet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:background="#99FF1E00"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/base_mywebview_internet_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前无网络，请检查网络"
+                android:textColor="#FFF" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/base_myupdateview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:background="#FFF"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/base_myupdateview_img"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_huojian" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="发现新版本"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/base_myupdateview_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <!-- 我的页面底部：预留footer的位置   -->
+    <FrameLayout
+        android:id="@+id/base_myfooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </FrameLayout>
+
+</LinearLayout>
