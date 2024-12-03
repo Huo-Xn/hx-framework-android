@@ -29,10 +29,10 @@ android {
 
     signingConfigs {
         release{
-            storeFile file('D:/workbase/zl-butler-android/app.jks')
-            storePassword 'sxkj0314'
-            keyPassword 'sxkj0314'
-            keyAlias 'butler'
+            storeFile file('D:/workbase/hx-framework-android/app.jks')
+            storePassword 'hx1017'
+            keyPassword 'hx1017'
+            keyAlias 'yuque'
         }
     }
 }

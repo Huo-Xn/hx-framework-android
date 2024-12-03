@@ -10,7 +10,7 @@
     </style>
     <style name="MyStartTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/config_bg_splash</item>
-        <item name="config_color_splash_bg">@mipmap/butler_splash</item>
+        <item name="config_color_splash_bg">@mipmap/yuque_splash</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowIsTranslucent">true</item>>
         <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>

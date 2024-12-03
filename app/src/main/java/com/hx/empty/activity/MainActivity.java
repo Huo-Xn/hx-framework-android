@@ -32,7 +32,7 @@ public class MainActivity extends BaseActivity {
         View decor = getWindow().getDecorView();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             //设置window的状态栏不可见,且状态栏字体是白色
-            if (isDarkMode(getBaseContext() )) {
+            if (!isDarkMode(getBaseContext())) {
                 decor.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR | View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
             } else {
                 decor.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
@@ -40,7 +40,7 @@ public class MainActivity extends BaseActivity {
         }
 
         // TODO 填写你的项目地址
-        return "http://192.168.172.67:1711/#/login";
+        return "http://192.168.172.67:1017/#";
     }
 
     @Override
